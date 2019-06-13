@@ -35,7 +35,8 @@
                 },
                 "defaults":  {
                     "class": "General",
-                    "landHolding": 2
+                    "landHolding": 2,
+					"langue": "French"
                 }
             },
             "addressHierarchy": {
@@ -106,8 +107,8 @@
                     "field": "address2"
                 },
                 "customAttributes": {
-                    "label": "रुग्णाचे नाव",
-                    "placeholder": "रुग्णाचे नाव",
+                    "label": "Commune",
+                    "placeholder": "Commune",
                     "fields": ["givenNameLocal", "middleNameLocal", "familyNameLocal"]
                 }
             }
