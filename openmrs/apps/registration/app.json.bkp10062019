@@ -21,12 +21,13 @@
                 "additionalPatientInformation": {
                     "title": "Additional Patient Information",
                     "attributes": [
-                        "telephone",
-                        "langue",
-                        "zipcode",
-                        "occupation",
-                        "StatusRefugie",
-                        "MaritalStatus"
+                        "distanceFromCenter",
+                        "isUrban",
+                        "cluster",
+                        "RationCard",
+                        "familyIncome",
+                        "debt",
+                        "cluster"
                     ]
                 },
                 "hidden": {
@@ -46,7 +47,7 @@
                 "strictAutocompleteFromLevel": "stateProvince"
             },
 			"mandatoryPersonAttributes": [
-            "primaryRelative","secondaryRelative","nomtuteur"
+            "primaryRelative","secondaryRelative"
         ],
             "relationshipTypeMap": {
                 "Doctor":"provider",
@@ -54,7 +55,7 @@
             },
 
             "autoCompleteFields":["familyName", "caste"],
-            "defaultIdentifierPrefix": "OMRS",
+          "defaultIdentifierPrefix": "OMRS",
             "defaultVisitType": "OPD",
             "searchByIdForwardUrl": "/patient/{{patientUuid}}",
             "showMiddleName": true,
@@ -62,7 +63,6 @@
             "isLastNameMandatory": true,
             "showSaveConfirmDialog": false,
             "showBirthTime": true,
-            "showEnterID":false,
             "showCasteSameAsLastNameCheckbox": false,
             "printOptions": [
                 {
@@ -108,14 +108,14 @@
             },
             "patientSearch": {
                 "address": {
-                    "label": "Commune",
-                    "placeholder": "Commune",
+                    "label": "Rural Ward",
+                    "placeholder": "Enter ward",
                     "field": "address2"
                 },
                 "customAttributes": {
-                    "label": "OC Number",
-                    "placeholder": "OC ID",
-                    "fields": ["openclinic_id", "primaryRelative", "secondaryRelative"]
+                    "label": "रुग्णाचे नाव",
+                    "placeholder": "रुग्णाचे नाव",
+                    "fields": ["givenNameLocal", "middleNameLocal", "familyNameLocal"]
                 }
             }
         }

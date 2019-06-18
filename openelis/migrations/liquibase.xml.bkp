@@ -12,7 +12,7 @@
         </preConditions>
         <comment>Add default organization name for openelis</comment>
         <sql>
-            INSERT INTO site_information(id, name, lastupdated, description, value, encrypted, value_type)  VALUES ( nextVal( 'site_information_seq' ) , 'defaultOrganizationName', now(), 'Default organization name for department to be synced from openmrs',  'Village Health Works', 'f', 'text' );
+            INSERT INTO site_information(id, name, lastupdated, description, value, encrypted, value_type)  VALUES ( nextVal( 'site_information_seq' ) , 'defaultOrganizationName', now(), 'Default organization name for department to be synced from openmrs',  'Bahmni', 'f', 'text' );
         </sql>
     </changeSet>
     <changeSet id="201510121504" author="Preethi,Sourav">
